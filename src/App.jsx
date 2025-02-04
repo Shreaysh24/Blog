@@ -3,6 +3,7 @@ import './App.css'
 import Home from './Home'
 import Post from './Post'
 import Update from "./Update"
+import Play from "./Play"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Post?" element={<Post />} />
         <Route path="/Update/:id" element={<Update />} />
+        <Route path="/Play" element={<Play />} />
       </Routes>
     </BrowserRouter>
   )
