@@ -3,7 +3,8 @@ import './App.css'
 import Home from './Home'
 import Post from './Post'
 import Update from "./Update"
-import Play from "./Play"
+// import Play from "./Play"
+import Login from "./Login"
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Post?" element={<Post />} />
         <Route path="/Update/:id" element={<Update />} />
-        <Route path="/Play" element={<Play />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   )

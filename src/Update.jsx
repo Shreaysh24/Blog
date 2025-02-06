@@ -18,10 +18,6 @@ function Update() {
 
     }, [form])
 
-
-    
-
-
     const handleChange = (event) => {
         const { name, value } = event.target;
         setForm((prevValues) => ({ ...prevValues, [name]: value }));
@@ -34,7 +30,8 @@ function Update() {
             const response = await fetch(`http://localhost:5000/api/posts/${blog.id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(form)
+                body: JSON.stringify(form),
+                credentials:"include",
             });
 
             if (!response.ok) {
